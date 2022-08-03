@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>闭包 | TemaXu</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/logo.jpg">
+    <meta name="description" content="我的个人网站">
+    
+    <link rel="preload" href="/assets/css/0.styles.8f93fd0e.css" as="style"><link rel="preload" href="/assets/js/app.00bbc02f.js" as="script"><link rel="preload" href="/assets/js/2.3796e161.js" as="script"><link rel="preload" href="/assets/js/22.08415efc.js" as="script"><link rel="prefetch" href="/assets/js/10.e6f948ff.js"><link rel="prefetch" href="/assets/js/11.1400f356.js"><link rel="prefetch" href="/assets/js/12.f1a05b63.js"><link rel="prefetch" href="/assets/js/13.43fe3a0b.js"><link rel="prefetch" href="/assets/js/14.e6c7245f.js"><link rel="prefetch" href="/assets/js/15.1377b7e0.js"><link rel="prefetch" href="/assets/js/16.d24e0bab.js"><link rel="prefetch" href="/assets/js/17.6125c4f4.js"><link rel="prefetch" href="/assets/js/18.08867455.js"><link rel="prefetch" href="/assets/js/19.9f977700.js"><link rel="prefetch" href="/assets/js/20.368baf53.js"><link rel="prefetch" href="/assets/js/21.b8f12a5b.js"><link rel="prefetch" href="/assets/js/3.1e2d025f.js"><link rel="prefetch" href="/assets/js/4.789c5e60.js"><link rel="prefetch" href="/assets/js/5.9ac7578b.js"><link rel="prefetch" href="/assets/js/6.3ff75902.js"><link rel="prefetch" href="/assets/js/7.a8a0dc8f.js"><link rel="prefetch" href="/assets/js/8.1e94f8f8.js"><link rel="prefetch" href="/assets/js/9.57259f51.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8f93fd0e.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">TemaXu</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/js/" class="nav-link router-link-active">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/web/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/web/html/" class="nav-link">
+  html
+</a></li></ul></div></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法题库
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/chinese.html" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/language/japanese.html" class="nav-link">
+  Japanese
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web/js/" class="nav-link router-link-active">
+  js
+</a></li><li class="dropdown-item"><!----> <a href="/web/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/web/html/" class="nav-link">
+  html
+</a></li></ul></div></div><div class="nav-item"><a href="/algorithm/" class="nav-link">
+  算法题库
+</a></div><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Languages" class="dropdown-title"><span class="title">Languages</span> <span class="arrow down"></span></button> <button type="button" aria-label="Languages" class="mobile-dropdown-title"><span class="title">Languages</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/language/chinese.html" class="nav-link">
+  Chinese
+</a></li><li class="dropdown-item"><!----> <a href="/language/japanese.html" class="nav-link">
+  Japanese
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/web/js/" aria-current="page" class="sidebar-link">RegExp对象</a></li><li><a href="/web/js/闭包.html" class="active sidebar-link">闭包</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web/js/闭包.html#heading-2" class="sidebar-link">Heading 2</a></li></ul></li><li><a href="/web/js/原型链.html" class="sidebar-link">原型链</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="闭包"><a href="#闭包" class="header-anchor">#</a> 闭包</h1> <h2 id="heading-2"><a href="#heading-2" class="header-anchor">#</a> Heading 2</h2> <p><strong>Bold</strong></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">8/2/2022, 5:46:55 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web/js/" class="prev router-link-active">
+        RegExp对象
+      </a></span> <span class="next"><a href="/web/js/原型链.html">
+        原型链
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.00bbc02f.js" defer></script><script src="/assets/js/2.3796e161.js" defer></script><script src="/assets/js/22.08415efc.js" defer></script>
+  </body>
+</html>
